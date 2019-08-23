@@ -1,7 +1,7 @@
 #!/bin/bash -x
 downloadFiles()
  {
-     wget  http://files.sa-mp.com/samp037svr_R2-1.tar.gz
+     wget  http://35.206.126.225/artifactory/generic-local/reguhoop/sampserver/oroginalserver/samp037svr_R2-1.tar.gz
  }
   
  unpack()
