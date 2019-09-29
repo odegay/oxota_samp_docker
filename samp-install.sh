@@ -22,6 +22,12 @@ downloadBaseServer()
  }
  createShoebill()
  {
+	
+	
+	cd plugin
+	wget  http://35.206.126.225/artifactory/generic-local/reguhoop/sampserver/Shoebill
+	cd ..
+	
 	wget  http://35.206.126.225/artifactory/generic-local/reguhoop/sampserver/shoebillbottstrap/shoebill.TAR
 	tar -xf  shoebill.TAR
 	cd shoebill
@@ -29,6 +35,7 @@ downloadBaseServer()
 	wget -O shoebill-dependency-manager.jar  http://35.206.126.225/artifactory/oxotarp_shoebill/net/gtaun/shoebill-dependency-manager/2.0/shoebill-dependency-manager-2.0.jar
 	wget -O shoebill-launcher.jar http://35.206.126.225/artifactory/oxotarp_shoebill/net/gtaun/shoebill-launcher/2.0/shoebill-launcher-2.0.jar
 	cd ..	
+	
  }
  
   
@@ -37,8 +44,9 @@ downloadBaseServer()
      clean
      downloadBaseServer
      unpackBaseServer
-	 rconpass
+	 
 	 createShoebill
+	 rconpass
      clean
 }
 main # calling program entry point
