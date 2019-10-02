@@ -1,7 +1,7 @@
 #Converting from MTA server dockerfile
 FROM odegay/oxota_server_base:latest
 
-RUN apt-get update && apt-get upgrade -y
+#RUN apt-get update && apt-get upgrade -y
 
 COPY samp-install.sh /app/
 
@@ -13,4 +13,6 @@ EXPOSE 7777
 
 WORKDIR "/samp03"
 
-CMD ["./samp03svr"]
+#CMD ["./samp03svr"]
+
+CMD ["/bin/bash"]
